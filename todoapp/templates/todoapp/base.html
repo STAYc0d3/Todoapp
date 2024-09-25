@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'css/todoapp.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="sidebar">
+        <h2 class = 'leftside_menu_title'>My Todoapp</h2>
+        <div class = 'leftside_menu_description'>
+            <p>My <strong>Todoapp</strong> project is a task management application built with Django. It allows users to create, edit, and manage tasks efficiently. The project demonstrates the integration of several key web development technologies and best practices for building modular and scalable applications.</p>
+            
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>Django</strong>: As the main web framework, Django was used for the backend logic, including handling HTTP requests, form submissions, and database management.</li>
+                <li><strong>HTML/CSS</strong>: Used for designing and structuring the user interface.</li>
+                <li><strong>Django Forms</strong>: Implemented to handle task creation and modification with built-in validation.</li>
+                <li><strong>SQLite</strong>: As a lightweight database for managing task records.</li>
+                <li><strong>Django Templating System</strong>: For rendering dynamic content and building user-friendly views.</li>
+                <li><strong>ChatGPT Assistance</strong>: Used ChatGPT to generate parts of the HTML and CSS code, significantly speeding up the development process by providing quick solutions and recommendations.</li>
+            </ul>
+            
+        </div>
+        
+    </div>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

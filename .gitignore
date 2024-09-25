@@ -1,0 +1,39 @@
+# Python-specific ignores
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment (if any)
+env/
+venv/
+ENV/
+VENV/
+
+# Django-specific ignores
+db.sqlite3
+media/
+
+# Logs and local development files
+*.log
+*.pot
+*.mo
+*.py[cod]
+*.sqlite3
+*.env
+*.DS_Store
+
+# VSCode or other IDE settings
+.vscode/
+.idea/
+
+# Static and media files (generated dynamically)
+staticfiles/
+media/
+
+# Ignore migrations (if you don't want them in the repo)
+*/migrations/*
+
+# Ignore settings files with secrets (if applicable)
+secrets.json
+.env

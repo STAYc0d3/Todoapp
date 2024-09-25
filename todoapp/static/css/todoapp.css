@@ -1,0 +1,167 @@
+body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+#sidebar{
+    display: flex; /* Використовуємо flexbox для контейнера */
+    flex-direction: column; /* Вирівнюємо елементи вертикально */
+}
+#content{
+    background-color: #00000004;
+    border-radius: 20px;
+}
+.leftside_menu_title{
+    font-size: 42px;
+    margin: 10px;
+    text-align: center;
+}
+.leftside_menu_description{
+    text-align: center;
+    font-size: 20px;
+}
+.task_body {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60% 3% 27% 5% 5%;
+    background-color: #D3DFEB;
+    border-radius: 25px;
+    height: 75px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.task_title {
+    text-align: left;
+    padding-left: 7%;
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.deadline{
+    color: #5A8F65;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+.deadline_icon{
+    
+}
+.description{
+    text-align: left center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.tasks_list_title {
+    color: #5A8F65;
+    font-family: 'Ubuntu';
+    text-align: center;
+    margin: 15px;
+}
+.tasks_list_background {
+    width: 100%;
+    display: inline-grid;
+    border-radius: 5px;
+}
+.edit_task_button {
+    width: 40px;
+    min-height: 40px;
+    background: #a3e4d7;
+    border: 1px solid #a3e4d7;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    outline: 0;
+    padding: 0;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.edit_task_button img {
+    width: 24px;
+    height: 24px;
+}
+.delete_task_button{
+    width: 40px;
+    min-height: 40px;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    outline: 0;
+    padding: 0;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+.delete_task_button img {
+    width: 24px;
+    height: 24px;
+}
+.edit_task_form {
+    display: none;
+    padding-left: 7%;
+}
+.show_form .edit_task_form {
+    display: block;
+}
+.create_task_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.create_task_button_confirm {
+    width: 33%;
+    min-height: 30px;
+    background: #9cbda0;
+    border: 1px solid #ffffff;
+        
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 800;
+}
+.create_form{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.form-group {
+    display: flex; /* Використовуємо flexbox для контейнера */
+    flex-direction: column; /* Вирівнюємо елементи вертикально */
+    align-items: center; /* Вирівнюємо всі елементи по горизонталі */
+}
+.create_form_text{
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}

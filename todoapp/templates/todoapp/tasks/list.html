@@ -1,0 +1,57 @@
+{% extends 'todoapp/base.html' %}
+{% load static %}
+{% load form_tags %}
+
+{% block title %}My TodoApp{% endblock title %}
+
+{% block content %}
+    <h1 class="tasks_list_title">Tasks</h1>
+
+    <form class="create_task_form" method="POST" action="{% url 'todoapp:task_create'%}">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{ create_task_form.title.id_for_label }}" class="create_form_text">Task title:</label>
+            {{ create_task_form.title|add_class:"create_form" }}
+        </div>
+    
+        <div class="form-group">
+            <label for="{{ create_task_form.deadline.id_for_label }}" class="create_form_text">Deadline:</label>
+            {{ create_task_form.deadline|add_class:"create_form" }}
+        </div>
+    
+        <button type="submit" class="btn btn-primary create_task_button_confirm">Create</button>
+    </form>
+    
+
+    <div class="tasks_list_background">
+        {% for task, form in task_form_list %}
+        <div class="task_body" id="task_{{ task.id }}">
+            <p class="task_title">{{ task.title }}</p>
+            <img class="deadline_icon" src="{% static 'css/icons/sand-clock.svg' %}" alt="Deadline clock">
+            <p class="deadline">
+                {{ task.deadline|date:"M. d, Y, g:i A" }}
+            </p>
+        
+            <button class="edit_task_button" type="button" onclick="toggleForm('{{ task.id }}')">
+                <img src="{% static 'css/icons/pen.svg' %}" alt="Edit" />
+            </button>
+
+            <form class="delete_task_form" method="POST" action="{% url 'todoapp:task_delete' task.id %}">
+                {% csrf_token %}
+                <button class="delete_task_button" type="submit">
+                    <img src="{% static 'css/icons/brush.svg' %}" alt="Delete" />
+                </button>
+            </form>
+
+            <form class="edit_task_form" method="POST" action="">
+                {% csrf_token %}
+                <input type="hidden" name="task_id" value="{{ task.id }}">
+                {{ form.title.label_tag }} {{ form.title }} 
+                {{ form.deadline.label_tag }} {{ form.deadline }}
+                <button type="submit">Save</button>
+            </form>
+            <script src="{% static 'js/toggleForm.js' %}"></script>
+        </div>        
+        {% endfor %}
+    </div>
+{% endblock content %}

@@ -1,7 +1,7 @@
 # Todoapp – Django Task Management Application
 
-## Description:
-**Todoapp** is a task management application built using Django, allowing users to create, edit, and manage tasks efficiently. This project is designed as a personal pet project to demonstrate the integration of several web development technologies.
+## Introduction:
+This is my first pet project that I'm publishing on GitHub. **Todoapp** is a task management application built using Django, allowing users to create, edit, and manage tasks efficiently. This project demonstrates my understanding of web development technologies and my ability to integrate various tools and frameworks.
 
 ## Features:
 - Task creation, editing, and deletion.

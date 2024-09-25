@@ -69,5 +69,6 @@ Open your browser and navigate to http://127.0.0.1:8000/ to access the applicati
 You can manage tasks, users, and other parts of the application via the Django admin panel. Access it by navigating to /admin/ and logging in with your superuser credentials.
 ## Screenshots
 - Task creation form ![image](https://github.com/user-attachments/assets/d47e2a56-2f9e-49e7-bc92-8d2cc0711bba)
-- Task list ![image](https://github.com/user-attachments/assets/1c9be02f-dcd1-4581-9cfc-5257a1fcbdd9)
+- Task list ![image](https://github.com/user-attachments/assets/7228c1ad-6839-45f7-a433-dd1c4362f359)
+
 

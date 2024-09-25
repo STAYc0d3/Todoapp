@@ -5,8 +5,6 @@
 
 ## Features:
 - Task creation, editing, and deletion.
-- User authentication and task assignment to specific users.
-- Responsive design using Bootstrap.
 - Validation and handling of task forms.
 - SQLite as the database for task storage.
 

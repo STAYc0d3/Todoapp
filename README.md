@@ -62,7 +62,6 @@ python manage.py runserver
 Open your browser and navigate to http://127.0.0.1:8000/ to access the application.
 
 ## Adding a Task
-- Log in with your credentials or create a new user.
 - Add a new task by navigating to the task creation page.
 - Fill in the task details and submit the form.
 - Edit or delete tasks via the task list page.
